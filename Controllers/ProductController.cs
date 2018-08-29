@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Multi_UnitOfWork.Controllers
 {
-	[Route("[controller]")]
+	[Route("api/[controller]")]
 	public class ProductController : ControllerBase
 	{
 		private readonly IProductService _productService;

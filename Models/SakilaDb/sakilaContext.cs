@@ -14,7 +14,7 @@ namespace Multi_UnitOfWork.Models.SakilaDb
 			: base(options)
 		{
 		}
-
+		/*
 		public virtual DbSet<Actor> Actor { get; set; }
 		public virtual DbSet<Address> Address { get; set; }
 		public virtual DbSet<Category> Category { get; set; }
@@ -33,15 +33,15 @@ namespace Multi_UnitOfWork.Models.SakilaDb
 		public virtual DbSet<Staff> Staff { get; set; }
 		public virtual DbSet<Store> Store { get; set; }
 
-		//         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-		//         {
-		//             if (!optionsBuilder.IsConfigured)
-		//             {
-		// #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-		//                 optionsBuilder.UseSqlServer("Data Source=KUMBRE\\SQLEXPRESS;Initial Catalog=sakila;Integrated Security=True");
-		//             }
-		//         }
-
+		        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		        {
+		            if (!optionsBuilder.IsConfigured)
+		            {
+		#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+		                optionsBuilder.UseSqlServer("Data Source=KUMBRE\\SQLEXPRESS;Initial Catalog=sakila;Integrated Security=True");
+		            }
+		        }
+		*/
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.Entity<Actor>(entity =>

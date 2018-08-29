@@ -46,7 +46,7 @@ namespace Multi_UnitOfWork
 				optionBuilder.AddUnitOfWork<sakilaContext>("SakilaDbConnection");
 			});
 
-			services.AddScoped<IProductService, ProductService>();
+			services.AddServiceModule();
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 		}
 
@@ -62,7 +62,7 @@ namespace Multi_UnitOfWork
 				app.UseHsts();
 			}
 
-			app.UseHttpsRedirection();
+			//app.UseHttpsRedirection();
 			app.UseMvc();
 		}
 	}
