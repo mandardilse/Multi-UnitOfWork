@@ -8,7 +8,7 @@ namespace Multi_UnitOfWork.Core
 		private readonly IServiceProvider _serviceProvider;
 		private readonly UnitOfWorkOptions _options;
 
-		public IEnumerable<string> RegisteredUowKeys => throw new System.NotImplementedException();
+		public IEnumerable<string> RegisteredUowKeys => _options..RegisterUows.Keys;
 
 		public UnitOfWorkMultiContext(IServiceProvider provider, UnitOfWorkOptions options)
 		{
